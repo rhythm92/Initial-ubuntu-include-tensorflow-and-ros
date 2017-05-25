@@ -68,7 +68,7 @@ go to https://github.com/bazelbuild/bazel/releases download bazel
 	sudo apt-get install libcupti-dev 
 Install tensorflow
 
-	cd tensorflow
+	cd ~/tensorflow
 	./configure
 configure
 
