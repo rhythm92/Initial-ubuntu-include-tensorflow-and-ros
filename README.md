@@ -16,8 +16,19 @@
 	sudo apt-get install python-rosinstall
 # Initial cuda
 https://developer.nvidia.com/cuda-downloads
+
+	cd ~/Download
+	sudo dpkg -i cuda-repo-ubuntu1604-8-0-local-ga2_8.0.61-1_amd64.deb
+	sudo apt-get update
+	sudo apt-get install cuda
 # Initial cudnn
 https://developer.nvidia.com/rdp/cudnn-download
+
+	cd ~/Download
+	sudo tar -xvzf cudnn-8.0-linux-x64-v5.1.tgz 
+	sudo cp -P include/cudnn.h /usr/include
+	sudo cp -P lib64/libcudnn* /usr/lib/x86_64-linux-gnu/
+	sudo chmod a+r /usr/lib/x86_64-linux-gnu/libcudnn*
 # Initial opencv
 	cd ~
 	git clone https://github.com/daveselinger/opencv.git
