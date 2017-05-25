@@ -15,6 +15,22 @@
 	source /opt/ros/kinetic/setup.bash
 	sudo apt-get install python-rosinstall
 # Initial cuda
+https://developer.nvidia.com/cuda-downloads
 # Initial cudnn
+https://developer.nvidia.com/rdp/cudnn-download
 # Initial opencv
+	cd ~
+	git clone https://github.com/daveselinger/opencv.git
+	cd opencv
+	mkdir build
+	sudo apt-get install cmake-gui
+	sudo cmake-gui
+select opencv and opencv/build
+config
+generate
+
+	cd build
+	sudo cmke ..
+	sudo make -j8
+	sudo make install
 # Initial tensorflow
