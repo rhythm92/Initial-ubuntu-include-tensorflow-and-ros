@@ -26,8 +26,8 @@ https://developer.nvidia.com/rdp/cudnn-download
 
 	cd ~/Download
 	sudo tar -xvzf cudnn-8.0-linux-x64-v5.1.tgz 
-	sudo cp -P include/cudnn.h /usr/include
-	sudo cp -P lib64/libcudnn* /usr/lib/x86_64-linux-gnu/
+	sudo cp -P cuda/include/cudnn.h /usr/include
+	sudo cp -P cuda/lib64/libcudnn* /usr/lib/x86_64-linux-gnu/
 	sudo chmod a+r /usr/lib/x86_64-linux-gnu/libcudnn*
 # Initial opencv
 	cd ~
@@ -41,7 +41,7 @@ config
 generate
 
 	cd build
-	sudo cmke ..
+	sudo cmake ..
 	sudo make -j8
 	sudo make install
 # Initial tensorflow
