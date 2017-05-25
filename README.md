@@ -60,6 +60,7 @@ Install bazel
 	sudo apt-get install pkg-config zip g++ zlib1g-dev unzip
 go to https://github.com/bazelbuild/bazel/releases download bazel
 
+	cd ~/Download
 	chmod +x bazel-<version>-installer-<os>.sh
 	./bazel-<version>-installer-<os>.sh --user
 	echo "export PATH=\"$PATH:$HOME/bin"" >> ~/.bashrc
