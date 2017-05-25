@@ -36,9 +36,7 @@ https://developer.nvidia.com/rdp/cudnn-download
 	mkdir build
 	sudo apt-get install cmake-gui
 	sudo cmake-gui
-#select opencv and opencv/build
-#config
-#generate
+select opencv and opencv/build->config->generate
 
 	cd build
 	sudo cmake ..
