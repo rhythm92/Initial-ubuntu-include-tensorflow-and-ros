@@ -61,8 +61,8 @@ Install bazel
 go to https://github.com/bazelbuild/bazel/releases download bazel
 
 	cd ~/Downloads
-	chmod +x bazel-<version>-installer-<os>.sh
-	./bazel-<version>-installer-<os>.sh --user
+	chmod +x bazel-0.4.5-installer-linux-x86_64.sh
+	./bazel-0.4.5-installer-linux-x86_64.sh --user
 	echo "export PATH=\"$PATH:$HOME/bin"" >> ~/.bashrc
  	sudo apt-get install python-numpy python-dev python-pip python-wheel
 	sudo apt-get install libcupti-dev 
