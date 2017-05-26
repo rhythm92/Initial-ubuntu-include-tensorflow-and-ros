@@ -2,7 +2,6 @@
 	sudo apt-get upgrade
 	sudo apt-get update
 	sudo apt-get install nvidia-375
-	sudo apt-get install pip
 
 # Instial ros-Kinetic
 	sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
@@ -15,10 +14,11 @@
 	source ~/.bashrc
 	source /opt/ros/kinetic/setup.bash
 	sudo apt-get install python-rosinstall
+	sudo apt-get install python-pip
 # Initial cuda
 https://developer.nvidia.com/cuda-downloads
 
-	cd ~/Download
+	cd ~/Downloads
 	sudo dpkg -i cuda-repo-ubuntu1604-8-0-local-ga2_8.0.61-1_amd64.deb
 	sudo apt-get update
 	sudo apt-get install cuda
@@ -27,8 +27,8 @@ https://developer.nvidia.com/rdp/cudnn-download
 
 	cd ~/Download
 	sudo tar -xvzf cudnn-8.0-linux-x64-v5.1.tgz 
-	sudo cp -P cuda/include/cudnn.h /usr/include
-	sudo cp -P cuda/lib64/libcudnn* /usr/lib/x86_64-linux-gnu/
+	sudo cp -P cuda/include/cudnn.h /usr/local/cuda/include
+	sudo cp -P cuda/lib64/libcudnn* /usr/local/cuda/lib64
 	sudo chmod a+r /usr/lib/x86_64-linux-gnu/libcudnn*
 # Initial opencv
 	cd ~
